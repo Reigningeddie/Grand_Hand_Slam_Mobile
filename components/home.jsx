@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
 
   pic: {
     border: 'solid',
-    height: '24%',
-    width: '22%',
+    height: '29%',
+    width: '20%',
     borderRadius: 50,
     backgroundColor: '#EAB2A0',
   },

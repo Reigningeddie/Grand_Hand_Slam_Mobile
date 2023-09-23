@@ -26,8 +26,10 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   body: {
-    flex: 1,
     alignItems: 'center',
+    height: '30%',
+    borderWidth: 3,
+    border: 'solid',
   },
 
   title: {
@@ -37,15 +39,16 @@ const styles = StyleSheet.create({
 
   pic: {
     border: 'solid',
-    height: '10%',
+    height: '24%',
     width: '22%',
     borderRadius: 50,
-    backgroundColor: '#EAB2A0'
+    backgroundColor: '#EAB2A0',
   },
 
   dez: {
     color: 'aliceblue',
     fontSize: 25,
+    border: 'solid',
   },
 
   user: {
@@ -68,7 +71,6 @@ const styles = StyleSheet.create({
   item: {
     color: 'aliceblue',
     fontSize: 20,
-
   }
 })
 

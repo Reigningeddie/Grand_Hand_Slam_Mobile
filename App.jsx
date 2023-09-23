@@ -3,13 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import Home from './components/home';
 import UtilityBar from './components/utilityBar';
 import Banner from './components/banner';
+import Grid from './components/grid';
 
 export default function App() {
   return (
     <View style={styles.body}>
       <UtilityBar />
-      <Home />
       <Banner />
+      <Home />
+      <Grid />
 
     </View>
   );

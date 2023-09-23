@@ -2,12 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './components/home';
 import UtilityBar from './components/utilityBar';
+import Banner from './components/banner';
 
 export default function App() {
   return (
     <View style={styles.body}>
       <UtilityBar />
       <Home />
+      <Banner />
+
     </View>
   );
 }

@@ -12,7 +12,6 @@ export default function App() {
       <Banner />
       <Home />
       <Grid />
-
     </View>
   );
 }

@@ -8,9 +8,10 @@ export default utilityBar
 
 const styles = StyleSheet.create({
   bar: {
-    backgroundColor: 'aliceblue',
+    backgroundColor: 'grey',
     border: 'solid',
     width: '100%',
     height: 40,
+    zIndex: 2,
   }
 })

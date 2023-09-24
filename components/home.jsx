@@ -7,18 +7,17 @@ const Home = () => {
     <Text style={styles.user}>User Name</Text>
     <View style={styles.gridBox}>
       <View style={styles.grid}>
-        <Text style={styles.item}>101</Text>
+        <Text style={styles.num}>101</Text>
         <Text style={styles.item}>points</Text>
       </View>
       <View style={styles.grid}>
-        <Text style={styles.item}>361</Text>
+        <Text style={styles.num}>361</Text>
         <Text style={styles.item}>followers</Text>
       </View>
       <View style={styles.grid}>
-        <Text style={styles.item}>253</Text>
+        <Text style={styles.num}>253</Text>
         <Text style={styles.item}>following</Text>
       </View>
-
     </View>
     <Text style={styles.dez}>Description (add max characters)</Text>
   </View>
@@ -26,34 +25,29 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   body: {
+    width: '100%',
     alignItems: 'center',
-    height: '30%',
-    borderWidth: 3,
     border: 'solid',
+    borderWidth: 3,
   },
 
   title: {
     color: '#EAB2A0',
-    fontSize: 30,
+    fontSize: 29,
+    fontWeight: 'bold'
   },
 
   pic: {
     border: 'solid',
-    height: '29%',
-    width: '20%',
+    height: '26%',
+    width: '19%',
     borderRadius: 50,
     backgroundColor: '#EAB2A0',
   },
 
-  dez: {
-    color: 'aliceblue',
-    fontSize: 25,
-    border: 'solid',
-  },
-
   user: {
     color: 'aliceblue',
-    fontSize: 20,
+    fontSize: 25,
   },
 
   gridBox: {
@@ -63,15 +57,25 @@ const styles = StyleSheet.create({
 
   grid: {
     alignItems: 'center',
-    justifyContent: 'center',
     color: 'aliceblue',
     padding: 10,
+  },
+
+  num: {
+    color: 'aliceblue',
+    fontSize: 25,
   },
 
   item: {
     color: 'aliceblue',
     fontSize: 20,
-  }
+    fontWeight: 'bold',
+    },
+
+    dez: {
+      color: 'aliceblue',
+      fontSize: 20
+    }
 })
 
 

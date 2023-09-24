@@ -8,7 +8,6 @@ export default function Grid() {
 
 const styles = StyleSheet.create({
   body: {
-    flex: 1,
     backgroundColor: '#2D4356',
   },
 });

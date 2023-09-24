@@ -12,6 +12,5 @@ const styles = StyleSheet.create({
     border: 'solid',
     width: '100%',
     height: 40,
-    zIndex: 2,
   }
 })

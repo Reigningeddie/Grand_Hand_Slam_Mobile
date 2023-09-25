@@ -2,7 +2,7 @@ import { StyleSheet, View, Text } from 'react-native';
 
 const Home = () => {
   return <View style={styles.body}>
-    <Text style={styles.title}>Welcome to Grand Hand Slam</Text>
+    <Text style={styles.title}>Grand Hand Slam</Text>
     <View style={styles.pic}></View>
     <Text style={styles.user}>User Name</Text>
     <View style={styles.gridBox}>
@@ -33,21 +33,25 @@ const styles = StyleSheet.create({
 
   title: {
     color: '#EAB2A0',
-    fontSize: 29,
-    fontWeight: 'bold'
+    fontSize: 50,
+    fontWeight: 'bold',
   },
 
   pic: {
     border: 'solid',
-    height: '26%',
-    width: '19%',
-    borderRadius: 50,
+    height: '29%',
+    width: '25%',
+    borderRadius: 60,
+    borderWidth: 3,
     backgroundColor: '#EAB2A0',
+    borderColor: '#A76F6F'
   },
 
   user: {
     color: 'aliceblue',
     fontSize: 25,
+    color: '#EAB2A0',
+    fontWeight: 'bold'
   },
 
   gridBox: {
@@ -64,12 +68,12 @@ const styles = StyleSheet.create({
   num: {
     color: 'aliceblue',
     fontSize: 25,
+    fontWeight: 'bold'
   },
 
   item: {
     color: 'aliceblue',
     fontSize: 20,
-    fontWeight: 'bold',
     },
 
     dez: {

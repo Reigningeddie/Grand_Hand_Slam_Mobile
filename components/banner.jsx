@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: '#2D4356',
     width: '100%',
-    height: '32%',
+    height: 175,
     zIndex: -1,
   }
 })

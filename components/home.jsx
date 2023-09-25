@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
   body: {
     width: '100%',
     alignItems: 'center',
-    border: 'solid',
-    borderWidth: 3,
+    borderTop: 'solid',
+    borderTopWidth: 2,
   },
 
   title: {
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
 
   pic: {
     border: 'solid',
-    height: '29%',
-    width: '25%',
+    height: 100,
+    width: 100,
     borderRadius: 60,
     borderWidth: 3,
     backgroundColor: '#EAB2A0',

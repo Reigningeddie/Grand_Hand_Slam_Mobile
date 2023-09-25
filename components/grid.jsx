@@ -4,14 +4,14 @@ export default function Grid() {
   return <View style={styles.body}>
       <View style={styles.main}>
         <View style={styles.sides}>
-          <Text style={styles.item}>LeaderBoards</Text>
-          <Text style={styles.item}>Specials</Text>
-          <Text style={styles.item}>Rules</Text>
+          <View style={styles.center}><Text style={styles.item}>Leader Boards</Text></View>
+          <View style={styles.center}><Text style={styles.item}>Specials</Text></View>
+          <View style={styles.center}><Text style={styles.item}>Rules</Text></View>
         </View>
         <View style={styles.sides}>
-          <Text style={styles.item}>Power-Ups</Text>
-          <Text style={styles.item}>Friends</Text>
-          <Text style={styles.item}>Bars</Text>
+          <View style={styles.center}><Text style={styles.item}>PowerUps</Text></View>
+          <View style={styles.center}><Text style={styles.item}>Friends</Text></View>
+          <View style={styles.center}><Text style={styles.item}>Bars</Text></View>
         </View>
       </View>
   </View>
@@ -40,16 +40,22 @@ const styles = StyleSheet.create({
     width: '35%',
   },
 
-  item: {
-    textAlign: 'center',
-    textAlignVertical: 'center',
-    border: 'solid',
+  center: {
+    alignItem: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
     borderWidth: 2,
     borderColor: '#82ffff',
     height: '15%',
     width: '80%',
     margin: 10,
-    color: '#82ffff'
+  },
+
+  item: {
+    color: '#82ffff',
+    textAlign: 'center'
   }
+
+
 
 });

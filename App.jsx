@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, SafeAreaProvider } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './components/home';
@@ -11,7 +11,7 @@ import Grid from './components/grid';
 function HomeScreen() {
   return (
     <View style={styles.body}>
-      {/* <UtilityBar /> */}
+      <UtilityBar />
       <Banner />
       <Home />
       <Grid />
@@ -27,20 +27,8 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen 
         name="Home" 
-        component={HomeScreen}
-        options={{
-          title: 'Grand Hand Slam',
-          headerStyle: {
-    backgroundColor: '#2D4356',
-    borderWidth: 0,
-    elevation: 0,
-    shadowOpacity: 0
-          },
-          headerTintColor: '#EAB2A0',
-          headerTitleStyle: {
-            fontSize: 40,
-          }
-        }} />
+        component={ HomeScreen }
+        options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

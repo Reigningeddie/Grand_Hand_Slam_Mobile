@@ -1,4 +1,4 @@
-import { View, StyleSheet} from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Home from '../components/home';
 import UtilityBar from '../components/utilityBar';
 import Banner from '../components/banner';

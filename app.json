@@ -2,6 +2,7 @@
   "expo": {
     "name": "Grand_Hand_Slam_Mobile",
     "slug": "Grand_Hand_Slam_Mobile",
+    "scheme": "Grand_Hand_Slam_Mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

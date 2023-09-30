@@ -3,6 +3,7 @@ import Home from '../components/home';
 import UtilityBar from '../components/utilityBar';
 import Banner from '../components/banner';
 import Grid from '../components/grid';
+import Stack from 'expo-router'
 
 
 export default function HomeScreen() {

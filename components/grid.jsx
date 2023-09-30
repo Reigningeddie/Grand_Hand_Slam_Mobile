@@ -1,10 +1,11 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 export default function Grid() {
   return <View style={styles.body}>
       <View style={styles.main}>
         <View style={styles.sides}>
-          <View style={styles.center}><Text style={styles.item}>Leader Boards</Text></View>
+          <Link href={'/leaderBoard'} style={styles.center}><Pressable><View><Text style={styles.item}>LeaderBoards</Text></View></Pressable></Link>
           <View style={styles.center}><Text style={styles.item}>Specials</Text></View>
           <View style={styles.center}><Text style={styles.item}>Rules</Text></View>
         </View>

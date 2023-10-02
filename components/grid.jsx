@@ -5,7 +5,7 @@ export default function Grid() {
   return <View style={styles.body}>
       <View style={styles.main}>
         <View style={styles.sides}>
-          <Link href={'/leaderBoard'} style={styles.center}><Pressable><View><Text style={styles.item}>LeaderBoards</Text></View></Pressable></Link>
+          <Pressable style={styles.center}><Link href={'/leaderBoard'}><View><Text style={styles.item}>LeaderBoards</Text></View></Link></Pressable>
           <View style={styles.center}><Text style={styles.item}>Specials</Text></View>
           <View style={styles.center}><Text style={styles.item}>Rules</Text></View>
         </View>

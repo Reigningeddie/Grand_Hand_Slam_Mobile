@@ -10,7 +10,7 @@ export default function Grid() {
           <View style={styles.center}><Text style={styles.item}>Rules</Text></View>
         </View>
         <View style={styles.sides}>
-          <View style={styles.center}><Text style={styles.item}>PowerUps</Text></View>
+        <Pressable style={styles.center}><Link href={'/powerUps'}><View><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
           <View style={styles.center}><Text style={styles.item}>Friends</Text></View>
           <View style={styles.center}><Text style={styles.item}>Bars</Text></View>
         </View>

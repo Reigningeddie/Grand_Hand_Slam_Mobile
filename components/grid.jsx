@@ -5,11 +5,12 @@ export default function Grid() {
   return <View style={styles.body}>
       <View style={styles.main}>
         <View style={styles.columns}>
-        <Pressable style={styles.btn}><Link href={'/leaderBoard'} style={styles.link}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Link></Pressable>
+        <Link href={'/leaderBoard'} style={styles.btn}><Pressable style={styles.link}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Pressable></Link>
           <View style={styles.btn}><Text style={styles.item}>Specials</Text></View>
           <View style={styles.btn}><Text style={styles.item}>Rules</Text></View>
         </View>
         <View style={styles.columns}>
+{/*-----------try centering this text using aid of borderWidth----------*/}
         <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
           <View style={styles.btn}><Text style={styles.item}>Friends</Text></View>
           <View style={styles.btn}><Text style={styles.item}>Bars</Text></View>
@@ -30,7 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#2D4356',
     width: '85%',
     flexDirection: 'row',
-
     justifyContent: 'center',
   },
 
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '35%',
+    margin: 10
   },
 
   btn: {
@@ -45,9 +46,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 2,
     borderColor: '#82ffff',
-    height: '17%',
-    width: '80%',
+    height: '21%',
+    width: '101%',
     margin: 10,
+  },
+
+  link: {
+    borderWidth: 2
   },
 
   center: {
@@ -58,9 +63,6 @@ const styles = StyleSheet.create({
 
   item: {
     color: '#82ffff',
-    textAlign: 'center',
+    alignItems: 'center',
   }
-
-
-
 });

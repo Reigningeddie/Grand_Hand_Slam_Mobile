@@ -4,15 +4,15 @@ import { Link } from 'expo-router';
 export default function Grid() {
   return <View style={styles.body}>
       <View style={styles.main}>
-        <View style={styles.sides}>
-          <Pressable style={styles.center}><Link href={'/leaderBoard'}><View><Text style={styles.item}>LeaderBoards</Text></View></Link></Pressable>
-          <View style={styles.center}><Text style={styles.item}>Specials</Text></View>
-          <View style={styles.center}><Text style={styles.item}>Rules</Text></View>
+        <View style={styles.columns}>
+        <Pressable style={styles.btn}><Link href={'/leaderBoard'} style={styles.link}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Link></Pressable>
+          <View style={styles.btn}><Text style={styles.item}>Specials</Text></View>
+          <View style={styles.btn}><Text style={styles.item}>Rules</Text></View>
         </View>
-        <View style={styles.sides}>
-        <Pressable style={styles.center}><Link href={'/powerUps'}><View><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
-          <View style={styles.center}><Text style={styles.item}>Friends</Text></View>
-          <View style={styles.center}><Text style={styles.item}>Bars</Text></View>
+        <View style={styles.columns}>
+        <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
+          <View style={styles.btn}><Text style={styles.item}>Friends</Text></View>
+          <View style={styles.btn}><Text style={styles.item}>Bars</Text></View>
         </View>
       </View>
   </View>
@@ -20,7 +20,6 @@ export default function Grid() {
 
 const styles = StyleSheet.create({
   body: {
-    color: 'aliceblue',
     justifyContent: 'center',
     flexDirection: 'row',
     marginTop: 10
@@ -31,30 +30,35 @@ const styles = StyleSheet.create({
     backgroundColor: '#2D4356',
     width: '85%',
     flexDirection: 'row',
-    alignItems: 'center',
+
     justifyContent: 'center',
   },
 
-  sides: {
+  columns: {
     alignItems: 'center',
     justifyContent: 'center',
     width: '35%',
   },
 
-  center: {
-    alignItem: 'center',
+  btn: {
+    alignItems: 'center',
     justifyContent: 'center',
-    alignSelf: 'center',
     borderWidth: 2,
     borderColor: '#82ffff',
-    height: '15%',
+    height: '17%',
     width: '80%',
     margin: 10,
   },
 
+  center: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
+
   item: {
     color: '#82ffff',
-    textAlign: 'center'
+    textAlign: 'center',
   }
 
 

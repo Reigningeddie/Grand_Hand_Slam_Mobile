@@ -4,10 +4,10 @@ const Home = () => {
   return <View style={styles.body}>
     <Text style={styles.title}>Grand Hand Slam</Text>
     <View style={styles.pic}></View>
-    <Text style={styles.user}>User Name</Text>
+    <Text style={styles.user}>ReigningEddie</Text>
     <View style={styles.gridBox}>
       <View style={styles.grid}>
-        <Text style={styles.num}>101</Text>
+        <Text style={styles.num}>150</Text>
         <Text style={styles.item}>points</Text>
       </View>
       <View style={styles.grid}>

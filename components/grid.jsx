@@ -10,7 +10,6 @@ export default function Grid() {
           <View style={styles.btn}><Text style={styles.item}>Rules</Text></View>
         </View>
         <View style={styles.columns}>
-{/*-----------try centering this text using aid of borderWidth----------*/}
         <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
         <Pressable style={styles.btn}><Link href={'/friends'} style={styles.link}><View style={styles.center}><Text style={styles.item}>Friends</Text></View></Link></Pressable>
           <View style={styles.btn}><Text style={styles.item}>Bars</Text></View>
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
   body: {
     justifyContent: 'center',
     flexDirection: 'row',
-    marginTop: 10
+    marginTop: 10,
   },
 
   
@@ -49,7 +48,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     height: '21%',
     width: '101%',
-    margin: 10,
+    margin: 10
   },
 
   // link: {

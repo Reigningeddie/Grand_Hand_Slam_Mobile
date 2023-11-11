@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
 
   pic: {
     border: 'solid',
-    height: 100,
-    width: 100,
+    height: 120,
+    width: 120,
     borderRadius: 60,
     borderWidth: 3,
     backgroundColor: '#EAB2A0',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 
   user: {
     color: 'aliceblue',
-    fontSize: 25,
+    fontSize: 30,
     color: '#EAB2A0',
     fontWeight: 'bold'
   },

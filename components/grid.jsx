@@ -5,14 +5,14 @@ export default function Grid() {
   return <View style={styles.body}>
           <View style={styles.main}>
         <View style={styles.columns}>
-          <Pressable style={styles.btn}><Link href={'/leaderBoard'} style={styles.link}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Link></Pressable>
-          <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>Specials</Text></View></Link></Pressable>
-          <View style={styles.btn}><Text style={styles.item}>Rules</Text></View>
+          <Link href={'/leaderBoard'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>special</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Rules</Text></View></Pressable></Link>
         </View>
         <View style={styles.columns}>
-        <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>PowerUps</Text></View></Link></Pressable>
-        <Pressable style={styles.btn}><Link href={'/friends'} style={styles.link}><View style={styles.center}><Text style={styles.item}>Friends</Text></View></Link></Pressable>
-          <View style={styles.btn}><Text style={styles.item}>Bars</Text></View>
+          <Link href={'/powerUps'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Power Ups</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Friends</Text></View></Pressable></Link>
+          <Link href={'/leaderBoards'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Bars</Text></View></Pressable></Link>
         </View>
       </View>
   </View>

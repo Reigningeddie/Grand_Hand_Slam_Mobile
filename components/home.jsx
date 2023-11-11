@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     color: 'aliceblue',
     padding: 10,
+
   },
 
   num: {

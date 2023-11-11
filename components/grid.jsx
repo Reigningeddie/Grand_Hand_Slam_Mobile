@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { Link } from 'expo-router';
 
 export default function Grid() {
   return <View style={styles.body}>
-      <View style={styles.main}>
+          <View style={styles.main}>
         <View style={styles.columns}>
           <Pressable style={styles.btn}><Link href={'/leaderBoard'} style={styles.link}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Link></Pressable>
           <Pressable style={styles.btn}><Link href={'/powerUps'} style={styles.link}><View style={styles.center}><Text style={styles.item}>Specials</Text></View></Link></Pressable>
@@ -21,23 +21,26 @@ export default function Grid() {
 const styles = StyleSheet.create({
   body: {
     justifyContent: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
-    marginTop: 10,
+    marginTop: -60
   },
 
-  
   main: {
     backgroundColor: '#2D4356',
     width: '85%',
     flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10
+
   },
 
   columns: {
     alignItems: 'center',
     justifyContent: 'center',
     width: '35%',
-    margin: 10
+    margin: 10,
   },
 
   btn: {
@@ -48,7 +51,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     height: '21%',
     width: '101%',
-    margin: 10
+    margin: 10,
   },
 
   // link: {

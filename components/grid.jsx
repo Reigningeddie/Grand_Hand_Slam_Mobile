@@ -12,7 +12,7 @@ export default function Grid() {
         <View style={styles.columns}>
           <Link href={'/powerUps'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Power Ups</Text></View></Pressable></Link>
           <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Friends</Text></View></Pressable></Link>
-          <Link href={'/leaderBoards'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Bars</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Bars</Text></View></Pressable></Link>
         </View>
       </View>
   </View>

@@ -20,11 +20,26 @@ export default function LeaderBoard() {
               
             </View>
             <View style ={styles.rest}>
-              <Text style={styles.others}>#2</Text>
-              <Text style={styles.others}>#3</Text>
-              <Text style={styles.others}>#4</Text>
-              <Text style={styles.others}>#5</Text>
-              <Text style={styles.others}>#6</Text>
+              <View style={styles.border}><Text style={styles.oNum}>#2</Text><View style={styles.oData}>
+                <Text style={styles.oName}>name</Text>
+                <Text style={styles.oPoints}>points</Text>
+              </View></View>
+              <View style={styles.border}><Text style={styles.oNum}>#3</Text><View style={styles.oData}>
+                <Text style={styles.oName}>name</Text>
+                <Text style={styles.oPoints}>points</Text>
+              </View></View>
+              <View style={styles.border}><Text style={styles.oNum}>#4</Text><View style={styles.oData}>
+                <Text style={styles.oName}>name</Text>
+                <Text style={styles.oPoints}>points</Text>
+              </View></View>
+              <View style={styles.border}><Text style={styles.oNum}>#5</Text><View style={styles.oData}>
+                <Text style={styles.oName}>name</Text>
+                <Text style={styles.oPoints}>points</Text>
+              </View></View>
+              <View style={styles.border}><Text style={styles.oNum}>#6</Text><View style={styles.oData}>
+                <Text style={styles.oName}>name</Text>
+                <Text style={styles.oPoints}>points</Text>
+              </View></View>
             </View>
         </View>
       </View>
@@ -86,25 +101,57 @@ const styles = StyleSheet.create({
   },
 
   name: {
-    color: 'aliceblue'
+    color: 'aliceblue',
+    fontSize: 20
   },
 
   points: {
-    color: 'aliceblue'
+    color: 'aliceblue',
+    fontSize: 20
   },
 
   num: {
     color: 'aliceblue',
-    fontSize: 30
+    fontSize: 40
   },
 
-  others: {
+  rest: {
+    borderRadius: 50
+  },
+
+  border: {
+    borderColor: 'black',
+    borderWidth: 2,
+    borderRadius: 10,
+    fontSize: 30,
+    margin: 5,
+    padding: 5,
+    backgroundColor: '#338ea4',
+    height: 65,
+    width: 300,
+    flexDirection: 'row'
+  },
+
+  oNum: {
     color: 'aliceblue',
     fontSize: 20,
-    margin: 5,
-    borderRadius: 10,
-    backgroundColor: '#338ea4',
-    height: 50,
+    width: 30,
+    marginTop: 10
+  },
+
+  oData: {
+    justifyContent: 'center',
+    alignItems: 'center',
     width: 250
   },
+
+  oName: {
+    color: 'aliceblue',
+    fontSize: 20
+  },
+
+  oPoints: {
+    color: 'aliceblue',
+    fontSize: 20
+  }
 })

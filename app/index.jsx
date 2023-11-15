@@ -3,15 +3,17 @@ import Home from '../components/home';
 import UtilityBar from '../components/utilityBar';
 import Banner from '../components/banner';
 import Grid from '../components/grid';
+import Login from '../app/login'
 import Stack from 'expo-router';
 
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.body}>
-        <Banner />
+        <Login />
+        {/* <Banner />
         <Home />
-        <Grid />
+        <Grid /> */}
     </SafeAreaView>
   )
 }

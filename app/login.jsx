@@ -1,4 +1,4 @@
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
 import Back from '../components/back';
 
 export default function login() {
@@ -11,8 +11,10 @@ export default function login() {
       <TextInput 
         style={styles.input}
         placeholder={'password'}></TextInput>
-      <Text style={styles.btn}>Login</Text>
-      <Text style={styles.btn}>Register</Text>
+      <View style={styles.border}><Text style={styles.login}>Login</Text></View>
+      
+      <Text style={styles.signUp}>Don't have an account? <Text style={styles.btn}>Sign Up</Text></Text>
+      
     </View>
   )
 }
@@ -36,18 +38,40 @@ const styles = StyleSheet.create({
 
   text: {
     color: 'aliceblue',
+    fontSize: 30
   },
 
   input: {
+    fontSize: 15,
     borderWidth: 2,
     paddingLeft: 5,
-    height: 35,
-    width: 150,
+    borderRadius: 5,
+    height: 40,
+    width: 200,
     marginBottom: 15
   },
 
-  btn: {
+  border: {
+    backgroundColor: '#2EA1DD',
+    width: 150,
+    height: 35,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 8,
+    borderRadius: 10
+  },
+
+  login: {
+    fontSize: 15,
     color: 'aliceblue',
-    marginBottom: 5
+  },
+
+  signUp: {
+    fontSize: 15
+  },
+
+  btn: {
+    color: '#2EA1DD',
+    marginBottom: 20
   }
 })

@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
 
   one: {
-    backgroundColor: '#00728d',
+    backgroundColor: '#368f8b',
     borderWidth: 2,
     height: 150,
     width: 150,
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
 
   oneData: {
-    backgroundColor: '#00728d',
+    backgroundColor: '#368f8b',
     borderWidth: 2,
     borderRadius: 10,
     height: 80,
@@ -125,14 +125,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 5,
     padding: 5,
-    backgroundColor: '#338ea4',
+    backgroundColor: '#ddbea8',
     height: 65,
     width: 300,
     flexDirection: 'row'
   },
 
   oNum: {
-    color: 'aliceblue',
+    color: 'black',
     fontSize: 20,
     width: 30,
     marginTop: 10
@@ -145,12 +145,12 @@ const styles = StyleSheet.create({
   },
 
   oName: {
-    color: 'aliceblue',
-    fontSize: 20
+    color: 'black',
+    fontSize: 20,
   },
 
   oPoints: {
-    color: 'aliceblue',
+    color: 'black',
     fontSize: 20
   }
 })

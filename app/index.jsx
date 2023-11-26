@@ -10,10 +10,10 @@ import Stack from 'expo-router';
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.body}>
-        <Login />
-        {/* <Banner />
+        {/* <Login /> */}
+        <Banner />
         <Home />
-        <Grid /> */}
+        <Grid />
     </SafeAreaView>
   )
 }

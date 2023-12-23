@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 
-const Home = () => {
+const Profile = () => {
   return <View style={styles.body}>
     <Text style={styles.title}>Grand Hand Slam</Text>
     <View style={styles.pic}></View>
@@ -85,4 +85,4 @@ const styles = StyleSheet.create({
 
 
 
-export default Home;
+export default Profile;

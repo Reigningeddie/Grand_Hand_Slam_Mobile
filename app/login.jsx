@@ -1,5 +1,10 @@
-import { View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Pressable, 
+  useNavigate } from 'react-native';
+import { Link } from 'expo-router';
 import Back from '../components/back';
+
+
+
 
 export default function login() {
   return (
@@ -11,10 +16,8 @@ export default function login() {
       <TextInput 
         style={styles.input}
         placeholder={'password'}></TextInput>
-      <View style={styles.border}><Text style={styles.login}>Login</Text></View>
-      
+      <Link href={'/home'} asChild><Pressable style={styles.border}><Text style={styles.login}>Login</Text></Pressable></Link>
       <Text style={styles.signUp}>Don't have an account? <Text style={styles.btn}>Sign Up</Text></Text>
-      
     </View>
   )
 }

@@ -1,19 +1,13 @@
 import { View, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
-import Home from '../components/home';
 import UtilityBar from '../components/utilityBar';
-import Banner from '../components/banner';
-import Grid from '../components/grid';
-import Login from '../app/login'
-import Stack from 'expo-router';
+import Login from '../app/login';
+import Home from '../app/home';
 
 
-export default function HomeScreen() {
+export default function LoginScreen() {
   return (
-    <SafeAreaView style={styles.body}>
-        {/* <Login /> */}
-        <Banner />
-        <Home />
-        <Grid />
+    <SafeAreaView style={styles.body}>  
+    <Login />
     </SafeAreaView>
   )
 }

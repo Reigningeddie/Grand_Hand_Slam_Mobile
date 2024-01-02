@@ -1,7 +1,7 @@
 import { View, StyleSheet } from 'react-native'
-import Profile from '../components/profile';
-import Grid from '../components/grid';
-import Banner from '../components/banner';
+import Profile from '../../components/profile';
+import Grid from '../../components/grid';
+import Banner from '../../components/banner';
 
 export default function home() {
   return(

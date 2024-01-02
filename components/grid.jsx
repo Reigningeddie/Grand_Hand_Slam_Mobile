@@ -6,13 +6,13 @@ export default function Grid() {
           <View style={styles.main}>
         <View style={styles.columns}>
           <Link href={'/leaderBoard'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>LeaderBoard</Text></View></Pressable></Link>
-          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>special</Text></View></Pressable></Link>
-          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Rules</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Specials</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Search</Text></View></Pressable></Link>
         </View>
         <View style={styles.columns}>
-          <Link href={'/powerUps'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Power Ups</Text></View></Pressable></Link>
-          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Friends</Text></View></Pressable></Link>
+          <Link href={'/powerUps'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Power-Ups</Text></View></Pressable></Link>
           <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Bars</Text></View></Pressable></Link>
+          <Link href={'/friends'} asChild><Pressable style={styles.btn}><View style={styles.center}><Text style={styles.item}>Rules</Text></View></Pressable></Link>
         </View>
       </View>
   </View>

@@ -3,7 +3,7 @@ import { Link } from 'expo-router';
 
 export default function BackBtn() {
   return (
-    <Link href={'/home'}><Text style={styles.btn}>Back</Text></Link>
+    <Link href={'/users/1'}><Text style={styles.btn}>Back</Text></Link>
   )
 }
 

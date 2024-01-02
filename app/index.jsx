@@ -1,13 +1,12 @@
 import { View, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import UtilityBar from '../components/utilityBar';
-import Login from '../app/login';
-import Home from '../app/home';
+import Login from '../components/login';
 
 
 export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.body}>  
-    <Login />
+      <Login />
     </SafeAreaView>
   )
 }

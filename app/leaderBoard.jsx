@@ -1,11 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
-import BackBtn from '../components/back';
 
 export default function LeaderBoard() {
   return (
     <View style={styles.body}>
       <View style={styles.main}>
-      <BackBtn style={styles.btn} />
         <View style={styles.rank}>
           <View style={styles.top}>
             <View style={styles.one}>

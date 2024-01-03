@@ -1,12 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
-import Back from '../components/back';
 
 export default function powerUps() {
   return (
     <View style={styles.body}>
-      
       <View style={styles.main}>
-      <Back />
       <View style={styles.grid}>
         <View style={styles.columns}>
           <View style={styles.center}><Text style={styles.item}>#1</Text></View>

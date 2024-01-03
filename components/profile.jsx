@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
 
     dez: {
       color: 'aliceblue',
-      fontSize: 20
+      fontSize: 20,
+      marginHorizontal: 15,
     }
 })
 

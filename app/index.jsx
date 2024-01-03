@@ -1,4 +1,4 @@
-import { View, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import UtilityBar from '../components/utilityBar';
 import Login from '../components/login';
 

@@ -1,14 +1,16 @@
-import { View, StyleSheet } from 'react-native'
+import { SafeAreaView, View, StyleSheet } from 'react-native'
 import Profile from '../../components/profile';
 import Grid from '../../components/grid';
 import Banner from '../../components/banner';
+import Utility from '../../components/utilityBar';
 
 export default function home() {
   return(
     <View style={styles.body}>
-      <Banner />
-      <Profile />
-      <Grid />
+        <Utility />
+        <Banner />
+        <Profile />
+        <Grid />
     </View>
   )
 }

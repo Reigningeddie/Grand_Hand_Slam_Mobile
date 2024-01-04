@@ -11,6 +11,7 @@ export default function login() {
         placeholder={'Username'}></TextInput>
       <TextInput 
         style={styles.input}
+        secureTextEntry={true}
         placeholder={'password'}></TextInput>
       <Link href={'/users/1'} asChild><Pressable style={styles.border}><Text style={styles.login}>Login</Text></Pressable></Link>
       <Text style={styles.signUp}>Don't have an account? <Link href={'signUp'} asChild><Text style={styles.btn}>Sign Up</Text></Link></Text>

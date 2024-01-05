@@ -4,6 +4,7 @@ import { Link } from 'expo-router';
 export default function signUp() {
   return (
     <View style={styles.body}>
+      <View style={styles.align}><Text style={styles.txt}>Let's get you signed Up!</Text></View>
       <View style={styles.name}>
         <TextInput 
           style={styles.inputN}
@@ -23,7 +24,11 @@ export default function signUp() {
       style={styles.input}
       secureTextEntry={true}
       placeholder={'     New Password'} ></TextInput>
-      <Pressable><Text>Sign Up</Text></Pressable>
+      <TextInput 
+      style={styles.input}
+      secureTextEntry={true}
+      placeholder={'     confirm Password'} ></TextInput>
+      <Pressable style={styles.border}><Text style={styles.btn}>Sign Up</Text></Pressable>
     </View>
   )
 }
@@ -32,6 +37,16 @@ const styles = StyleSheet.create({
   body: {
     flex: 1,
     backgroundColor: '#435B66',
+  },
+
+  align: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  txt: {
+    fontSize: 30,
+    marginTop: 20,
   },
 
   name: {
@@ -57,5 +72,19 @@ const styles = StyleSheet.create({
     width: 390,
     marginTop: 15,
     marginLeft: 10
+  },
+
+  border: {
+    backgroundColor: '#2EA1DD',
+    fontSize: 10,
+    marginLeft: 100,
+    width: 200,
+    height: 40,
+    borderWidth: 2,
+    borderRadius: 5,
+    color: '#2EA1DD',
+    marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })

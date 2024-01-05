@@ -2,7 +2,7 @@ import { StyleSheet, View, Text } from 'react-native';
 
 const Profile = () => {
   return <View style={styles.body}>
-    <Text style={styles.title}>Grand Hand Slam</Text>
+    <Text style={styles.title}>process.env.local.REACT_APP_YOUR_CURRENT_KEY</Text>
     <View style={styles.pic}></View>
     <Text style={styles.user}>ReigningEddie</Text>
     <View style={styles.gridBox}>

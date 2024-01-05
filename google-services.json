@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736713970088",
+    "project_id": "grand-hand-slam",
+    "storage_bucket": "grand-hand-slam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736713970088:android:4f4d9e1228e293098acd9d",
+        "android_client_info": {
+          "package_name": "com.ghs.grandHandSlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8zyLOzHCzqUQkjcKm1Zkh8EFnCC297bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

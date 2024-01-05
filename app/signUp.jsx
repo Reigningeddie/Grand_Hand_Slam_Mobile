@@ -82,9 +82,13 @@ const styles = StyleSheet.create({
     height: 40,
     borderWidth: 2,
     borderRadius: 5,
-    color: '#2EA1DD',
+    borderColor: '#2EA1DD',
     marginTop: 20,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+  },
+
+  btn: {
+    color: 'aliceblue'
   }
 })
